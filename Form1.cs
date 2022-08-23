@@ -16,5 +16,31 @@ namespace RadioButton
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string input;
+
+            if (radioButton1.Checked == true)
+            {
+                input = radioButton1.Text;
+
+                MessageBox.Show(input);
+            }
+
+            if (radioButton2.Checked == true)
+            {
+                input = radioButton2.Text;
+
+                MessageBox.Show(input);
+            }
+
+            if (radioButton3.Checked == true)
+            {
+                input = radioButton3.Text;
+
+                MessageBox.Show(input);
+            }
+        }
     }
 }
